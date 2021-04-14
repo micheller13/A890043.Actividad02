@@ -8,22 +8,23 @@ namespace A890043.Actividad02
 {
     class Producto
     {
-        public int[] id;
-        public string[] producto;
-        public int[] stock;
-        public int prod, cant;
+        //public int[] id;
+        //public string[] producto;
+        //public int[] stock;
+        int cantidad;
+            //, cant;
         public void IngresodeProductos()
         {
             do
             {
-                Console.Write("Por favor, ingrese la cantidad de productos farmacéuticos a ingresar: ");
-                string ingreso = Console.ReadLine();
-                bool validez = int.TryParse(ingreso, out prod);
-                if (validez)
+                Console.Write("Por favor, ingrese la cantidad de productos farmacéuticos que desea ingresar en el catalogo: ");
+                string cantingresada = Console.ReadLine();
+                bool ingreso = int.TryParse(cantingresada, out cantidad);
+                if (ingreso)
                 {
-                    if (prod < 1)
+                    if (cantidad < 1)
                     {
-                        Console.WriteLine($"La cantidad de productos que requiere ingresar ({prod}) no es válido. Presione, enter para intentarlo nuevamente");
+                        Console.WriteLine($"La cantidad de productos que requiere ingresar ({cantidad}) no es válido. Presione, enter para intentarlo nuevamente");
                         Console.ReadKey();
                         //Console.Clear();
                         //continue;
@@ -41,7 +42,7 @@ namespace A890043.Actividad02
                     //continue;
                 }
             } while (true);
-
+            /*
             id = new int[prod];
             producto = new string[prod];
             stock = new int[prod];
@@ -262,8 +263,7 @@ namespace A890043.Actividad02
             variable.IngresodeProductos();
             variable.CargaInicial();
             variable.Menu();
-            Console.ReadKey();
+            Console.ReadKey();*/
         }
-
-        }
+    }
 }
