@@ -145,13 +145,13 @@ namespace A890043.Actividad02
 
 
                       
-                        case 5:
+                   case 5:
                             Console.WriteLine("Saliendo del sistema. Por favor, presione enter.");
-                            break;
+                   break;
 
-                        default:
-                            Console.WriteLine("Por favor, ingrese una opción valida");
-                            break;
+                   default:
+                            Console.WriteLine("Por favor, ingrese una opción valida"
+                   break;
                     }
                     Console.ReadKey();
                 } while (opcion != 5);
