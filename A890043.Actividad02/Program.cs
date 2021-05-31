@@ -26,10 +26,10 @@ namespace A890043.Actividad02
                     Console.WriteLine("Bienvenido al sistema de control de stock de productos farmacéuticos.\n");
 
                     Console.WriteLine(
-                        "\n 1. Crear un producto en el catalogo" +
-                        "\n 2. Ingresar un pedido" +
-                        "\n 3. Ingresar una entrega" +
-                        "\n 4. Visualizar un informe del stock final" +
+                        "\n 1. Crear un producto en el catalogo." +
+                        "\n 2. Ingresar un pedido." +
+                        "\n 3. Ingresar una entrega." +
+                        "\n 4. Visualizar un informe del stock final de los productos farmacéuticos." +
                         "\n 5. Salir");
 
                     Console.Write("\nSeleccione una opción: ");
@@ -42,6 +42,7 @@ namespace A890043.Actividad02
                          do
                             {
                                 Console.Write("Por favor, ingrese el numero de productos a ingresar: ");
+                                Console.WriteLine("Intente nuevamente");
                                 ingreso = Convert.ToInt32(Console.ReadLine());
                                 if (ingreso <= 0)
                                 {
@@ -124,7 +125,7 @@ namespace A890043.Actividad02
                             cantidadentrega = Convert.ToInt32(Console.ReadLine());
                             if (cantidadentrega <= 0)
                             {
-                                Console.Write("Su ingreso no es válido,sólo se puede ingresar un nro mayor a 0. Para intentarlo nuevamente presione enter");
+                                Console.Write("\nSu ingreso no es válido,sólo se puede ingresar un nro mayor a 0. Para intentarlo nuevamente presione enter");
                                 validacionentrega = false;
                                 Console.ReadKey();
 
