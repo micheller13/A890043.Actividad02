@@ -29,7 +29,7 @@ namespace A890043.Actividad02
                         "\n 1. Crear un producto en el catalogo" +
                         "\n 2. Ingresar un pedido" +
                         "\n 3. Ingresar una entrega" +
-                        "\n 4. Visualizar un informe del stock final de los productos farmacéuticos." +
+                        "\n 4. Visualizar un informe del stock final" +
                         "\n 5. Salir");
 
                     Console.Write("\nSeleccione una opción: ");
